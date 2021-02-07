@@ -1,34 +1,7 @@
 <?php include 'includes/header.php';?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-    <link rel="stylesheet" href="includes/bulma-0.9.1/bulma/css/bulma.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/script.js"></script>
-    <!--  -->
-    <link sizes="24x24" type="image/icon" rel="icon" href="https://assignmentmavens.com/img/unpeopled.png">
-    <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="./Achieve Success in College with Reliable Services Online _ AssignmentMavens_files/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="includes/all.min.css">
-    <link rel="stylesheet" href="includes/animate.min.css">
-    <link href="includes/css2" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="includes/cookieconsent.min.css">
-    <link href="includes/nice-select.min.css" rel="stylesheet">
-    <!-- Main css -->
-    <!-- <link href="includes/style.min.css" rel="stylesheet" type="text/css"> -->
-       <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="includes/regush.css" type="text/css">
-</head>
 <body>
 <!-- navbar -->
-<section>
+<section id="pricing">
     <div class="container">
         <!-- contact form -->
         
@@ -37,7 +10,7 @@
                         <form action="">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h1 class="text-center">Instant Assingment Help</h1>
+                                        <h1 class="text-center" style="font-size:30px; font-style:italic">Instant Assingment Help</h1>
                                         <h3 class="text-center">Get in Touch</h3>
                                     </div>
                         
@@ -63,7 +36,7 @@
                                                         <option data-val="19" value="19">Article </option>
                                                         <option data-val="15" value="15">Assignment </option>
                                                         <option data-val="25" value="25">Biography</option>
-                                                        <option data-val="8" value="8">Book Report </option>
+                                                        <option data-val="8" value="8">Book Rep`ort </option>
                                                         <option data-val="9" value="9">Book Review </option>
                                                         <option data-val="26" value="26">Business Plan</option>
                                                         <option data-val="20" value="20">Case Study </option>
@@ -87,7 +60,7 @@
                                                         <option data-val="3" value="3">Research Paper </option>
                                                         <option data-val="7" value="7">Research proposal </option>
                                                         <option data-val="34" value="34">Scholarship Essay</option>
-                                                        <option data-val="17" value="17">School Paper </option>
+                                                        <option data-val="17" value="17">School Paper </option> 
                                                         <option data-val="18" value="18">Speech </option>
                                                         <option data-val="2" value="2">Term Paper </option>
                                                         <option data-val="6" value="6">Thesis </option>
@@ -145,44 +118,66 @@
                         <!-- <br> -->
                         <div class="col-lg-12  col-md-12 ">
                         <div class="title-heading mt-4" >
-                            <h1 class="h1 text-white mb-3 text-center"> Professional Academic Writing Service</h1>
-                            <p class="para-desc text-light hidden-xs">Stuck with tough deadlines and overwhelming assignment guidelines? We ensure that you won’t have to worry about your grades anymore because our qualified professionals will take care of all your writing tasks. </p>
+                            <h1 class="h1 text-white mb-3 text-center"> Online Assignment Helper</h1>
+                            <p class="text-center para-desc text-light hidden-xs">Get fast, reliable and quality online assignment help from our team of experts.</p>
                             <div class="watch-video mt-4 pt-2 d-none d-md-block">
                                 <div class="row text-center">
                                     <!-- HERO BOX  -->
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 mt-6">
                                         <div class="hbox-2 box-icon-sm wow fadeInUp border-right" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp;">
                                             <!-- Icon -->
-                                            <i class="fas fa-money-bill"></i>
+                                            <i style="font-size:40px" class="fa fa-clock"></i>
                                             <!-- Text -->
                                             <div class="hbox-2-txt">
-                                                <p>Pay <span class="big-money"><span>Ksh</span>12.00</span> <span>Ksh</span>6.00 Only
-                                                    <!--  50% Off -->
+                                                <p>Timely Delivery
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- HERO BOX  -->
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 mt-6">
                                         <div class="hbox-2 b-right box-icon-sm wow fadeInUp border-right" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
                                             <!-- Icon -->
-                                            <i class="fas fa-stopwatch"></i>
+                                            <i style="font-size:40px" class="fa fa-graduation-cap"></i>
                                             <!-- Text -->
                                             <div class="hbox-2-txt">
-                                                <p>3-Hour Instant Delivery Assurance</p>
+                                                <p>Best Grades Assurance</p>
+                                                
                                             </div>
                                         </div>
                                     </div>
                                     <!-- HERO BOX -->
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 mt-6">
                                         <div class="hbox-2 b-right box-icon-sm wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-                                            <i class="fas fa-user-graduate"></i>
+                                        <i style="font-size:40px" class="fa fa-user"></i>
                                             <!-- Text -->
                                             <div class="hbox-2-txt">
                                                 <!--<p>Price Starting from 6.00 Only &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>-->
-                                                <p>Ph.D. Qualified Pros Online 24/7</p>
+                                                <p>Certified Professional Support 24/7</p>
                                             </div>
                                         </div>
+                                    </div>
+                                    <span></span>
+                                    <br>
+                                    <span></span>
+                                    <h2 style="margin-top:20%">GET IN TOUCH WITH US ON</h2>
+                                    <div class="now" >
+                                    <span></span>
+                                    <!-- <br> -->
+                                    <style>
+                                       i:hover{
+                                            color:black;
+                                        }
+                                    </style>
+                                    <a href="#"><i style="font-size:30px" class="fa fa-facebook ml-6 mt-6"></i></a>
+                                    <a href="#"><i style="font-size:30px;color:skyblue" class="fa fa-twitter ml-6 mt-6"></i></a>
+                                    <a href="#"><i style="font-size:30px;color:yellow" class="fa fa-snapchat ml-6 mt-6"></i></a>
+                                    <a href="#"><i style="font-size:30px;color:skyblue" class="fa fa-telegram ml-6 mt-6"></i></a>
+                                    <a href="#"><i style="font-size:30px;color:green" class="fa fa-wechat ml-6 mt-6"></i></a>
+                                    <a href="#"><i style="font-size:30px" class="fa fa-linkedin ml-6 mt-6"></i></a>     
+                                    <a href="#"><i style="font-size:30px" class="fa fa-instagram ml-6 mt-6"></i></a>     
+                                    <a href="#"><i style="font-size:30px" class="fa fa-gplus ml-6 mt-6"></i></a>     
+                                    <a href="#"><i style="font-size:30px" class="fa fa-gmail ml-6 mt-6"></i></a>     
                                     </div>
                                 </div>
                             </div>
@@ -194,14 +189,22 @@
     </div>
     
 </section>
-
+<span>  </span>
+<br>
+<span></span>
+<br>
+<style>
+    #benefits{
+        border-top:1px solid lightgrey !important;
+    }
+</style>
 <!--  -->
 <section class="section" id="benefits">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <div class="section-title mb-4 pb-2">
-                    <h1 class="main-title mb-4">What Will You Get?</h1>
+                    <h1 class="title-1" style="font-size:30px; font-weight:bold">WHY US</h1>
                     <p class="text-muted para-desc mx-auto mb-0">We provide professional writing services to help you score straight A’s by submitting custom written assignments that mirror your guidelines.
                     </p>
                 </div>
@@ -210,19 +213,9 @@
         </div>
         <!--end row-->
         <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="features mt-5">
-                    <i class="fas fa-gem"></i>
-                    <div class="content mt-4">
-                        <h4 class="title-2">Premium Quality </h4>
-                        <p class="text-muted mb-0">Get result-oriented writing and never worry about grades anymore. We follow the highest quality standards to make sure that you get perfect assignments.</p>
-                    </div>
-                </div>
-            </div>
-            <!--end col-->
             <div class="col-lg-3 col-md-6 mt-5">
                 <div class="features">
-                    <i class="fas fa-user-edit"></i>
+                    <i class="fa fa-users" style="font-size:30px"></i>
                     <div class="content mt-4">
                         <h4 class="title-2">Experienced Writers</h4>
                         <p class="text-muted mb-0">Our writers have experience in dealing with papers of every educational level. You can surely rely on the expertise of our qualified professionals.</p>
@@ -232,7 +225,7 @@
             <!--end col-->
             <div class="col-lg-3 col-md-6 mt-5">
                 <div class="features">
-                    <i class="fas fa-clock"></i>
+                    <i class="fa fa-clock" style="font-size:30px"></i>
                     <div class="content mt-4">
                         <h4 class="title-2">On-Time Delivery </h4>
                         <p class="text-muted mb-0">Your deadline is our threshold for success and we take it very seriously. We make sure you receive your papers before your predefined time. </p>
@@ -242,7 +235,7 @@
             <!--end col-->
             <div class="col-lg-3 col-md-6 mt-5">
                 <div class="features">
-                    <i class="fas fa-headset"></i>
+                    <i class="fa fa-clock-o" style="font-size:30px"></i>
                     <div class="content mt-4">
                         <h4 class="title-2">24/7 Customer Support </h4>
                         <p class="text-muted mb-0">Someone from our customer support team is always here to respond to your questions. So, hit us up if you have got any ambiguity or concern.</p>
@@ -250,9 +243,19 @@
                 </div>
             </div>
             <!--end col-->
+            <div class="col-lg-3 col-md-6">
+                <div class="features mt-5">
+                    <i class="fa fa-diamond" style="font-size:30px"></i>
+                    <div class="content mt-4">
+                        <h4 class="title-2">Premium Quality </h4>
+                        <p class="text-muted mb-0">Get result-oriented writing and never worry about grades anymore. We follow the highest quality standards to make sure that you get perfect assignments.</p>
+                    </div>
+                </div>
+            </div>
+            <!--end col-->
             <div class="col-lg-3 col-md-6 mt-5">
                 <div class="features">
-                    <i class="fas fa-shield-alt"></i>
+                    <i class="fa fa-shield" style="font-size:30px"></i>
                     <div class="content mt-4">
                         <h4 class="title-2">Complete Confidentiality</h4>
                         <p class="text-muted mb-0">Sit back and relax while we help you out with writing your papers. We have an ultimate policy for keeping your personal and order-related details a secret.</p>
@@ -262,7 +265,7 @@
             <!--end col-->
             <div class="col-lg-3 col-md-6 mt-5">
                 <div class="features">
-                    <i class="fas fa-check"></i>
+                    <i class="fa fa-check" style="font-size:30px"></i>
                     <div class="content mt-4">
                         <h4 class="title-2">Authentic Sources</h4>
                         <p class="text-muted mb-0">We assure you that your document will be thoroughly checked for plagiarism and grammatical errors as we use highly authentic and licit sources. </p>
@@ -272,7 +275,7 @@
             <!--end col-->
             <div class="col-lg-3 col-md-6 mt-5">
                 <div class="features">
-                    <i class="fas fa-undo-alt"></i>
+                    <i class="fa fa-undo" style="font-size:30px"></i>
                     <div class="content mt-4">
                         <h4 class="title-2">Moneyback Guarantee</h4>
                         <p class="text-muted mb-0">Still reluctant about placing an order? Our 100% Moneyback Guarantee backs you up on rare occasions where you aren’t satisfied with the writing.</p>
@@ -282,7 +285,7 @@
             <!--end col-->
             <div class="col-lg-3 col-md-6 mt-5">
                 <div class="features">
-                    <i class="fas fa-phone-volume"></i>
+                    <i class="fa fa-phone-volume" style="font-size:30px"></i>
                     <div class="content mt-4">
                         <h4 class="title-2">Order Tracking </h4>
                         <p class="text-muted mb-0">You don’t have to wait for an update for hours; you can track the progress of your order any time you want. We share the status after each step.</p>
@@ -294,7 +297,7 @@
         <!--end row-->
         <div class="text-center mt-5 wow bounceInUp" style="visibility: visible; animation-name: bounceInUp;">
             <a href="https://assignmentmavens.com/sign-up.php" class="btn btn-primary black-btn2 mt-3 mr-sm-2">Order Now</a>
-            <a href="javascript:void(Tawk_API.toggle())" class="btn btn-success black-btn2 mt-3 mr-sm-2 bounce-effect"><i class="fa fa-envelope"></i> Talk to Us</a>
+            <a href="javascript:void(Tawk_API.toggle())" class="btn btn-success black-btn2 mt-3 mr-sm-2 bounce-effect"><i class="fa fa-envelope"></i> Get in touch</a>
         </div>
     </div>
     <!--end container-->
@@ -302,7 +305,7 @@
         <div class="row">
             <div class="home-shape-arrow">
                 <img alt="image" class="img-fluid mx-auto d-block lazyload" src="includes/galuchat.png" style="">
-                <a class="mouse-down"><i class="fa fa-envelope"></i></a>
+                <!-- <a class="mouse-down"><i class="fa fa-comments"></i></a> -->
             </div>
             <!--
 <li class="quickviewbtn">
@@ -316,13 +319,17 @@
 
 <!-- end of dection clear -->
 <!-- start of section nnew -->
-
+<style>
+    #areas{
+        border-top:1px solid lightgrey !important;
+    }
+</style>
 <section class="section bg-light d-none d-sm-block" id="areas">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <div class="section-title mb-4 pb-2">
-                    <h1 class="main-title mb-4">Areas of Expertise</h1>
+                    <h1 class="mb-4" style="font-size:30px; font-weight:bold;">WE COVER THE FOLLOWING ASSIGNMENTS CATEGORIES</h1>
                     <p class="text-muted para-desc mx-auto mb-0">Although you can leverage our expertise for any writing task, we have a knack for creating flawless papers for the following document types.</p>
                 </div>
             </div>
@@ -330,32 +337,29 @@
         </div>
         <!--end row-->
         <!--end col-->
-        <div id="carousel1" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators custom-indi">
-                <li data-target="#carousel1" data-slide-to="0" class=""></li>
-                <li data-target="#carousel1" data-slide-to="1" class=""></li>
-                <li data-target="#carousel1" data-slide-to="2" class=""></li>
-                <li data-target="#carousel1" data-slide-to="3" class="active"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item">
-                    <div class="row text-center">
-                        <div class="col-lg-3 col-sm-6 col-6 mt-4 pt-2">
+        <!-- categories -->
+
+        <!--  -->
+        
+                    <div class="row text-center" id="aa">
+                        <a href="#">
+                        <div class="category col-lg-3 col-sm-6 col-6 mt-4 pt-2">
                             <div class="key-feature p-5 rounded shadow bg-white">
                                 <div class="icon-1 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Essay</h4>
+                                    <h4 class="title mb-0">Essays</h4>
                                 </div>
                             </div>
                         </div>
+                        </a>
                         <!--end col-->
                         <div class="col-lg-3 col-sm-6 mt-4 pt-2">
                             <div class="key-feature p-5 rounded shadow bg-white">
                                 <div class="icon-2 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Thesis</h4>
+                                    <h4 class="title mb-0">Programming assignements</h4>
                                 </div>
                             </div>
                         </div>
@@ -364,7 +368,7 @@
                                 <div class="icon-3 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Presentation</h4>
+                                    <h4 class="title mb-0">Case Study</h4>
                                 </div>
                             </div>
                         </div>
@@ -378,26 +382,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--
-                    <div class="faciolingual">
-                        <div class="class-box">
-                            <img alt="" src="s1sdf.jpg">
-                            <div class="class-box-content">
-                                <h4>Boxing</h4>
-                                <p>Mon - Fri 5:30 - 7:30 am / John Doe</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-4 col-xs-12 text-center mb-30">
-                            <a target="_blank" class="demo-img" href="#">
-                                <img alt="demo hero slider" src="rfsf.jpg">
-                            </a>
-                            <h3 class="demo-title">Hero Fullscreen Slider</h3>
-                        </div>
-                    </div>
--->
-                </div>
-                <div class="carousel-item">
                     <div class="row text-center">
                         <div class="col-lg-3 col-sm-6 mt-4 pt-2">
                             <div class="key-feature p-5 rounded shadow bg-white">
@@ -414,7 +398,7 @@
                                 <div class="icon-6 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Research Paper</h4>
+                                    <h4 class="title mb-0">Business Writing</h4>
                                 </div>
                             </div>
                         </div>
@@ -429,19 +413,6 @@
                         </div>
                         <div class="col-lg-3 col-sm-6 mt-4 pt-2">
                             <div class="key-feature p-5 rounded shadow bg-white">
-                                <div class="icon-8 icon text-center rounded-pill">
-                                </div>
-                                <div class="content mt-2">
-                                    <h4 class="title mb-0">Assignment</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row text-center">
-                        <div class="col-lg-3 col-sm-6 mt-4 pt-2">
-                            <div class="key-feature p-5 rounded shadow bg-white">
                                 <div class="icon-9 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
@@ -449,25 +420,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row text-center">
+                        
                         <!--end col-->
-                        <div class="col-lg-3 col-sm-6 mt-4 pt-2">
-                            <div class="key-feature p-5 rounded shadow bg-white">
-                                <div class="icon-10 icon text-center rounded-pill">
-                                </div>
-                                <div class="content mt-2">
-                                    <h4 class="title mb-0">Case Study</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 mt-4 pt-2">
-                            <div class="key-feature p-5 rounded shadow bg-white">
-                                <div class="icon-11 icon text-center rounded-pill">
-                                </div>
-                                <div class="content mt-2">
-                                    <h4 class="title mb-0">Letter</h4>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="col-lg-3 col-sm-6 mt-4 pt-2">
                             <div class="key-feature p-5 rounded shadow bg-white">
                                 <div class="icon-12 icon text-center rounded-pill">
@@ -477,36 +434,18 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="carousel-item active">
-                    <div class="row text-center">
+                    
                         <div class="col-lg-3 col-sm-6 mt-4 pt-2">
                             <div class="key-feature p-5 rounded shadow bg-white">
                                 <div class="icon-13 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
                                     <h4 class="title mb-0">Coursework</h4>
-                                    <!--
-                                    <div class="fisherman">
-                                        <div class="blog-post-title">
-                                            <h2><a href="#">Are You Ready for the New Macaron Hair Color Trend?</a></h2>
-                                        </div>
-                                    </div>
--->
+                                    
                                 </div>
                             </div>
                         </div>
                         <!--end col-->
-                        <div class="col-lg-3 col-sm-6 mt-4 pt-2">
-                            <div class="key-feature p-5 rounded shadow bg-white">
-                                <div class="icon-14 icon text-center rounded-pill">
-                                </div>
-                                <div class="content mt-2">
-                                    <h4 class="title mb-0">Speech</h4>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-lg-3 col-sm-6 mt-4 pt-2">
                             <div class="key-feature p-5 rounded shadow bg-white">
                                 <div class="icon-15 icon text-center rounded-pill">
@@ -528,34 +467,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <a class="carousel-control-prev" data-target="#carousel1" role="button" data-slide="prev">
-                <i class="fas fa-angle-left"></i>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" data-target="#carousel1" role="button" data-slide="next">
-                <i class="fas fa-angle-right"></i>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
         <!--end row-->
     </div>
     <!--end container-->
 </section>
 <!--end section-->
 
-<section>
-    <h4 class="text-center">Our services</h4>
-</section>
-<section>
-    <h4 class="text-center">Completed work</h4>
-</section>
-<section>
-    <h4 class="text-center">Testimonials</h4>
-</section>
+
 <section>
     <h4 class="text-center">Faqs</h4>
 </section>
+<?php include 'includes/footer.php';?>
 </body>
 </html>
 <script>
@@ -605,6 +527,11 @@ $(window).scroll(function() {
     })();
 
 </script>
+
+<!--  -->
+
+
+<!--  -->
 <!--End of Tawk.to Script-->
 <script>
     $(document).ready(function() {
