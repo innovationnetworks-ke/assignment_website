@@ -1,3 +1,14 @@
+<?php require 'process.php';
+?>
+<?php 
+
+if (isset($_GET['logout'])) {
+	$_SESSION['logged']=0;
+	session_unset($_SESSION['logged']);
+	session_destroy();
+	header('location:index.php');
+}
+?>
 <!--  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -85,8 +96,14 @@
         <li class="nav-item"><a href="index.php?#pricing">Pricing</a></li>
         <!-- <li class="nav-item"><a href="about.php">About us</a></li> -->
         <li class="nav-item"><a href="contacts.php">Contact us</a></li>
-        <li class="nav-item"><a href="#"><i class="fa fa-unlock"></i>Login</a></li>
-        <li class="nav-item"><a href="#"><i class="fa fa-user"></i>Sign up</a></li>
+        <?php if(!isset($_SESSION['logged'])): ?>
+        <li class="nav-item"><a href="login.php"><i class="fa fa-unlock">Login</i></a></li>
+        <li class="nav-item"><a href="register.php"><i class="fa fa-user">Sign Up</i></a></li>       
+        <?php endif; ?>
+        <li><?php if (isset($_SESSION['logged'])&&$_SESSION['logged']=1):?>
+		      <a href="index.php?logout=1">logout</a>
+          <?php endif; ?>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

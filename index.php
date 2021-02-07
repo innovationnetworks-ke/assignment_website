@@ -474,9 +474,84 @@
 <!--end section-->
 
 
-<section>
-    <h4 class="text-center">Faqs</h4>
+<section style="background:#f8f9fa;padding:70px 0px;">
+    <div class="container" id="faqs">
+        <div class="section-title text-center">
+            <h1 class="main-title mb-4">FAQs</h1>
+            <p class="text-muted para-desc mb-0 mx-auto">.</p>
+        </div>
+        <div class="row mt-3 align-items-center">
+
+            <!--end col-->
+            <div class="col-lg-6 col-md-6 align-items-center">
+                <div class="faq-content mr-lg-5">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card border rounded shadow mb-2">
+                            <a data-toggle="collapse" data-target="#collapseOne" class="faq position-relative" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="card-header bg-light p-3" id="headingOne">
+                                    <h4 class="h3 mb-0 faq-question">How fast can you deliver</h4>
+                                </div>
+                            </a>
+                            <div id="collapseOne" class="collapse toggle" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="text-muted mb-0 faq-ans">Your order will be delivered to you via e-mail. If you need any corrections in your final order, you can simply respond to that email. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end card-->
+                        <div class="card border rounded shadow mb-2">
+                            <a data-toggle="collapse" data-target="#collapseTwo" class="faq position-relative collapsed" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="card-header bg-light p-3" id="headingTwo">
+                                    <h4 class="title mb-0 faq-question">Can I talk to my writer?</h4>
+                                </div>
+                            </a>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="text-muted mb-0 faq-ans">Sure! Ask anything in the chatbox or shoot an email. You can hit us up with any query that is lingering in your minds and the writers will answer you via email.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end card-->
+                        <div class="card border rounded shadow mb-2">
+                            <a data-toggle="collapse" data-target="#collapsethree" class="faq position-relative collapsed" aria-expanded="false" aria-controls="collapsethree">
+                                <div class="card-header bg-light p-3" id="headingthree">
+                                    <h4 class="title mb-0 faq-question">Where should I send my order details?</h4>
+                                </div>
+                            </a>
+                            <div id="collapsethree" class="collapse" aria-labelledby="headingthree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="text-muted mb-0 faq-ans">Wherever you like; you can either send the details directly on the live chat box or send us an email. We are responsive everywhere and will definitely reply.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end card-->
+                        <div class="card rounded shadow mb-0">
+                            <a data-toggle="collapse" data-target="#collapsefive" class="faq position-relative collapsed" aria-expanded="false" aria-controls="collapsefive">
+                                <div class="card-header bg-light p-3" id="headingfive">
+                                    <h4 class="title mb-0 faq-question">How will I pay?</h4>
+                                </div>
+                            </a>
+                            <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="text-muted mb-0 faq-ans">You can trust us with your payments as we use the most secure transaction APIs. We accept card payments from Visa, MasterCard, American Express, and Discover.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end card-->
+                    </div>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+        <!--  -->
+        
+    </div>
 </section>
+<!-- end of faqs -->
+<!-- testimonials -->
+    
+<!-- end of testimonials -->
 <?php include 'includes/footer.php';?>
 </body>
 </html>

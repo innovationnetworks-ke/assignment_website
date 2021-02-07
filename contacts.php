@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-sm-12 col-lg-12">
                 <h3 class="h3">
-                    Contact us ,Fill the form Below</h3>
+                    To Contact us ,Fill the form Below</h3>
             </div>
         </div>
     </div>
