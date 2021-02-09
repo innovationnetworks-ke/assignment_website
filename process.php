@@ -1,5 +1,6 @@
 <?php include 'config.php'; ?>
-<?php session_start();
+<?php 
+// session_start();
 
 if (isset($_POST['register'])) {
 	$username=mysqli_real_escape_string($conn, $_POST['user_name']);

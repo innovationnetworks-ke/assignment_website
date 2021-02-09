@@ -1,51 +1,18 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/script.js"></script>
-      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-    <link rel="stylesheet" href="includes/bulma-0.9.1/bulma/css/bulma.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/script.js"></script>
-    <!--  -->
-    <link sizes="24x24" type="image/icon" rel="icon" href="https://assignmentmavens.com/img/unpeopled.png">
-    <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="./Achieve Success in College with Reliable Services Online _ AssignmentMavens_files/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="includes/all.min.css">
-    <link rel="stylesheet" href="includes/animate.min.css">
-    <link href="includes/css2" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="includes/cookieconsent.min.css">
-    <link href="includes/nice-select.min.css" rel="stylesheet">
-    <!-- Main css -->
-    <!-- <link href="includes/style.min.css" rel="stylesheet" type="text/css"> -->
-       <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="includes/regush.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-</head>
 <!-- footer -->
 <style>
     #footer{
         border-top:1px solid lightgrey !important;
-		margin-top:50px !important;
+		/* margin-top:10px !important; */
     }
 </style>
-<section id="footer" class="mt-4" style="background:rgb(197, 202, 202);">
+<section id="footer" class="mt-4">
 <br>
 		<div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
 				<div class="col-xs-12 col-sm-4 col-md-4">
+				<br>
 					<h5 style="font-weight:bold">Our services</h5>
-					<br>
+					<!-- <br> -->
 					<ul class="list-unstyled quick-links">
 						<li><a href="#">Free plagiarism report</a></li> 
 						<li><a href="#">Assignment Writing Services</a></li> 
@@ -70,6 +37,7 @@
 						<li><a href=""><i class="fa fa-whatsapp"></i>+2547 112 244 55</a></li>
 						<li><a href=""><i class=""></i></a></li>
 						<li><a href="" title="Design and developed by"><i></i>Designed By: Ngugidavid</a></li>
+						<li><a href=""><i class="fa fa-phone">+254798 305 620</i></a></li>
 					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
@@ -101,8 +69,10 @@
 				<hr>
 			</div>	
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-					<p style="border-top:1px solid grey" class="h4">&copy;Assign Helper. All Rights Reversed.<a class="text-green ml-2" href="#" target="_blank"></a></p>
+				<div style="border-top:1px solid grey;"class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+				<span></span>
+				<br>
+					<p style="marin-top:20px; color:white" class="h4">&copy;Assign Helper. All Rights Reversed.<a class="text-green ml-2" href="#" target="_blank"></a></p>
 				</div>
 				<hr>
 			</div>	

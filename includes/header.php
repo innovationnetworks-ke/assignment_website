@@ -15,16 +15,14 @@ if (isset($_GET['logout'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assign Helper</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/script.js"></script>
-      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  
     <link rel="stylesheet" href="includes/bulma-0.9.1/bulma/css/bulma.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -46,8 +44,27 @@ if (isset($_GET['logout'])) {
 
 
 </head>
-<body>
-<nav class="navbar navbar-default banner" style="background:rgb(197, 202, 202);">
+<body><script>
+document.addEventListener( 'DOMContentLoaded',function(){
+ var searchpara=document.getElementById("search_para").innerHTML;
+ searchpara=searchpara.toString();
+ document.getElementById("search").onclick =function ()
+ {highlight_word(searchpara)};	
+},false);
+
+function highlight_word(searchpara)
+{
+ var text=document.getElementById("search_text").value;
+ if(text)
+ {
+  var pattern=new RegExp("("+text+")", "gi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("search_para").innerHTML=new_text;
+ }
+}
+</script>
+
+<nav class="navbar navbar-default banner" style="background:#007b5e">
   <div class="container-fluid bg-">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -57,7 +74,7 @@ if (isset($_GET['logout'])) {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Assign Helper</a>
+      <a class="navbar-brand" href="#" style="color:white; font-size:30px">Assign Helper</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,9 +83,9 @@ if (isset($_GET['logout'])) {
       <form class="navbar-form navbar-right navbar-form-search" role="search">
         <div class="search-form-container hdn" id="search-input-container">
           <div class="search-input-group">
-          <button class="btn btn-primary">ORDER NOW</button>            <div class="form-group">
+          <button class="btn btn-primary"><a style="color:white" href="index.php?#pricing">ORDER NOW </a></button>            <div class="form-group">
               <input type="text" id="searchTerm" class="form-control" placeholder="Search for...">
-              <button type="submit" class="btn btn-default" id="search-button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+              <button type="submit" onclick="search()" class="btn btn-default" id="search-button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
               
             </div>
           </div>
@@ -76,6 +93,14 @@ if (isset($_GET['logout'])) {
         </div>
         
       </form>
+      <style>
+      ul li a{
+        color:white !important;
+      }
+      ul li a:hover{
+        color:black !important; 
+      }
+      </style>
       <ul class="nav navbar-nav navbar-right navbar-nav-primary">
         <li class="nav-item"><a href="index.php">Home</a></li>
         <!-- <li class="nav-item dropdown">
@@ -92,7 +117,7 @@ if (isset($_GET['logout'])) {
           </div>
         </li> -->
         <li class="nav-item"><a href="index.php?#areas">Serices</a></li>
-        <li class="nav-item"><a href="#">Resources</a></li>
+        <li class="nav-item"><a href="index.php?#testimonials">Testimonals</a></li>
         <li class="nav-item"><a href="index.php?#pricing">Pricing</a></li>
         <!-- <li class="nav-item"><a href="about.php">About us</a></li> -->
         <li class="nav-item"><a href="contacts.php">Contact us</a></li>
@@ -111,4 +136,3 @@ if (isset($_GET['logout'])) {
 <!-- end navbar -->    
 </body>
 </html>
-

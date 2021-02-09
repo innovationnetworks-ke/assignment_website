@@ -1,4 +1,19 @@
 <?php include 'includes/header.php';?>
+ <?php 
+    if(isset($_POST['submit']))
+    {  
+        $message = "<strong>Order Request,</strong><br />
+                    <strong>User email ID :</strong> $_POST[email]<br />
+                    <strong>Course :-</strong> $_POST[course]<br/>
+                    <strong>Deadline :-</strong> $_POST[deadline]<br/>
+                    <strong>Page count :-</strong> $_POST[pagecount]<br/>
+                    <strong>Description :-</strong> $_POST[description]<br/>
+                    ";
+        
+        sendmail("ngugidavid1001@gmail.com","Assignment helper",$message);
+        
+    }
+ ?>
 <body>
 <!-- navbar -->
 <section id="pricing">
@@ -7,10 +22,10 @@
         
             <div class="row col-md-12">
                     <div class="contact-form col-md-4">
-                        <form action="">
+                        <form action="" method="POST">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h1 class="text-center" style="font-size:30px; font-style:italic">Instant Assingment Help</h1>
+                                        <h1 class="text-center" style="font-size:30px;color:#007b5e">Instant Assingment Help</h1>
                                         <h3 class="text-center">Get in Touch</h3>
                                     </div>
                         
@@ -23,11 +38,11 @@
 
                                                     <div class="form-group">
                                                         <label for="">Enter your email</label>
-                                                        <input type="email" class="form-control" placeholder="Enter your email">
+                                                        <input type="email" name="email" class="form-control" placeholder="Enter your email">
                                                     </div>
                                                     <div class="form-group">
                                                       <label for="">Select Course</label>
-                                                      <select class="wide worktype mt-3 col-md-12 dropdown-select" id="services" name="Service">
+                                                      <select class="wide worktype mt-3 col-md-12 dropdown-select" id="services" name="course">
                                                         <span></span>
                                                         <option data-val="21" value="21">Admission Essay</option>
                                                         <option data-val="22" value="22">Annotated Bibliography</option>
@@ -70,11 +85,11 @@
                                                     <br>
                                                     <div class="form-group">
                                                         <label for="">Assignment Deadline</label>
-                                                        <input type="date" class="form-control" placeholder="Deadline">
+                                                        <input type="date" name="deadline" class="form-control" placeholder="Deadline">
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="">Page count</label>
-                                                        <input type="number" class="col-md-2  form-control" placeholder="Page count">
+                                                        <input type="number" name="pagecount" class="col-md-2 form-control" placeholder="Page count">
                                                     </div>
                                                     <!-- <span class="pages col-2">Pages</span>
                                                     <div class="pages_number col-5">
@@ -92,13 +107,12 @@
                                                     </div> -->
                                                     <div class="form-group">
                                                         <label for="">Description</label>
-                                                        <textarea name="" id="message" cols="30" rows="3" class="form-control" placeholder="Assignment details">
-                                                        </textarea>
+                                                        <input type="text" name="description" id="message" cols="30" rows="3" class="form-control" placeholder="Assignment details">
                                                         <label for="">Upload file</label>
                                                         <input type="file" name="file" id="file">
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="submit" class="btn btn-primary btn-md" value="Send Message">
+                                                        <input type="submit" name="submit" class="btn btn-primary btn-md" value="Send Message">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
@@ -111,14 +125,14 @@
                                     </div>
                         </form>
                     </div>
-                    <br>
+                    <!-- <br> -->
                     <span></span>
                     <br>
                     <div class="whyus col-md-8">
                         <!-- <br> -->
                         <div class="col-lg-12  col-md-12 ">
                         <div class="title-heading mt-4" >
-                            <h1 class="h1 text-white mb-3 text-center"> Online Assignment Helper</h1>
+                            <h1 class="h1 text-white mb-3 text-center" style="color:#007b5e"> Online Assignment Helper</h1>
                             <p class="text-center para-desc text-light hidden-xs">Get fast, reliable and quality online assignment help from our team of experts.</p>
                             <div class="watch-video mt-4 pt-2 d-none d-md-block">
                                 <div class="row text-center">
@@ -165,19 +179,20 @@
                                     <span></span>
                                     <!-- <br> -->
                                     <style>
-                                       i:hover{
+                                       /* a:hover a i{
                                             color:black;
-                                        }
+                                            background:red;
+                                        } */
                                     </style>
-                                    <a href="#"><i style="font-size:30px" class="fa fa-facebook ml-6 mt-6"></i></a>
-                                    <a href="#"><i style="font-size:30px;color:skyblue" class="fa fa-twitter ml-6 mt-6"></i></a>
+                                    <a href="www.facebook.com"><i style="font-size:30px" class="fa fa-facebook ml-6 mt-6"></i></a>
+                                    <a href="www.twitter.com"><i style="font-size:30px;color:skyblue" class="fa fa-twitter ml-6 mt-6"></i></a>
                                     <a href="#"><i style="font-size:30px;color:yellow" class="fa fa-snapchat ml-6 mt-6"></i></a>
                                     <a href="#"><i style="font-size:30px;color:skyblue" class="fa fa-telegram ml-6 mt-6"></i></a>
                                     <a href="#"><i style="font-size:30px;color:green" class="fa fa-wechat ml-6 mt-6"></i></a>
                                     <a href="#"><i style="font-size:30px" class="fa fa-linkedin ml-6 mt-6"></i></a>     
                                     <a href="#"><i style="font-size:30px" class="fa fa-instagram ml-6 mt-6"></i></a>     
-                                    <a href="#"><i style="font-size:30px" class="fa fa-gplus ml-6 mt-6"></i></a>     
-                                    <a href="#"><i style="font-size:30px" class="fa fa-gmail ml-6 mt-6"></i></a>     
+                                    <!-- <a href="#"><i style="font-size:30px;color:red" class="fa fa-google-plus ml-6 mt-6"></i></a>      -->
+                                    <!-- <a href="#"><i style="font-size:30px" class="fa fa-gmail ml-6 mt-6"></i></a>      -->
                                     </div>
                                 </div>
                             </div>
@@ -205,8 +220,8 @@
             <div class="col-12 text-center">
                 <div class="section-title mb-4 pb-2">
                     <h1 class="title-1" style="font-size:30px; font-weight:bold">WHY US</h1>
-                    <p class="text-muted para-desc mx-auto mb-0">We provide professional writing services to help you score straight A’s by submitting custom written assignments that mirror your guidelines.
-                    </p>
+                    <p class="text-muted para-desc mx-auto mb-0">We offer quality assignment services to guarantee you Best grades.</p>
+                    <p class=" para-desc mx-auto mb-0"><b>Assign Helper ~</b> With us Quality is guaranteed</p>
                 </div>
             </div>
             <!--end col-->
@@ -217,8 +232,8 @@
                 <div class="features">
                     <i class="fa fa-users" style="font-size:30px"></i>
                     <div class="content mt-4">
-                        <h4 class="title-2">Experienced Writers</h4>
-                        <p class="text-muted mb-0">Our writers have experience in dealing with papers of every educational level. You can surely rely on the expertise of our qualified professionals.</p>
+                        <h4 class="title-2">Proffesional Assignment Experts</h4>
+                        <p class="text-muted mb-0">Our team of proffesionals have experience in dealing with assignments of every listed Category.</p>
                     </div>
                 </div>
             </div>
@@ -227,8 +242,9 @@
                 <div class="features">
                     <i class="fa fa-clock" style="font-size:30px"></i>
                     <div class="content mt-4">
-                        <h4 class="title-2">On-Time Delivery </h4>
-                        <p class="text-muted mb-0">Your deadline is our threshold for success and we take it very seriously. We make sure you receive your papers before your predefined time. </p>
+                        <h4 class="title-2">Timely Delivery</h4>
+                        <!-- <span></span> -->
+                        <p class="text-muted mb-0">Timely delivery is one of our main objective, we make sure you receive your assignment before the pre-defined deadline date and time. </p>
                     </div>
                 </div>
             </div>
@@ -238,7 +254,7 @@
                     <i class="fa fa-clock-o" style="font-size:30px"></i>
                     <div class="content mt-4">
                         <h4 class="title-2">24/7 Customer Support </h4>
-                        <p class="text-muted mb-0">Someone from our customer support team is always here to respond to your questions. So, hit us up if you have got any ambiguity or concern.</p>
+                        <p class="text-muted mb-0">We are always there for you, Got any queries, get in touch with us anytime , 24/7 via our livechat, social media or contacts provided.</p>
                     </div>
                 </div>
             </div>
@@ -248,17 +264,19 @@
                     <i class="fa fa-diamond" style="font-size:30px"></i>
                     <div class="content mt-4">
                         <h4 class="title-2">Premium Quality </h4>
-                        <p class="text-muted mb-0">Get result-oriented writing and never worry about grades anymore. We follow the highest quality standards to make sure that you get perfect assignments.</p>
+                        <p class="text-muted mb-0">We provide best assignment standards from our team of experts, to assure you of the best grades for your assignment .</p>
                     </div>
                 </div>
             </div>
+        </div>
             <!--end col-->
+        <div class="row">
             <div class="col-lg-3 col-md-6 mt-5">
                 <div class="features">
                     <i class="fa fa-shield" style="font-size:30px"></i>
                     <div class="content mt-4">
                         <h4 class="title-2">Complete Confidentiality</h4>
-                        <p class="text-muted mb-0">Sit back and relax while we help you out with writing your papers. We have an ultimate policy for keeping your personal and order-related details a secret.</p>
+                        <p class="text-muted mb-0"> We have an ultimate policy for keeping your personal information and order-related details a secret, Only you can access the information.</p>
                     </div>
                 </div>
             </div>
@@ -278,7 +296,7 @@
                     <i class="fa fa-undo" style="font-size:30px"></i>
                     <div class="content mt-4">
                         <h4 class="title-2">Moneyback Guarantee</h4>
-                        <p class="text-muted mb-0">Still reluctant about placing an order? Our 100% Moneyback Guarantee backs you up on rare occasions where you aren’t satisfied with the writing.</p>
+                        <p class="text-muted mb-0">We provide upto 100% money back if you are not satisfied with the assignment, the moneyback process is simple and only required our management approval.</p>
                     </div>
                 </div>
             </div>
@@ -296,7 +314,7 @@
         </div>
         <!--end row-->
         <div class="text-center mt-5 wow bounceInUp" style="visibility: visible; animation-name: bounceInUp;">
-            <a href="https://assignmentmavens.com/sign-up.php" class="btn btn-primary black-btn2 mt-3 mr-sm-2">Order Now</a>
+            <a href="index.php?#pricing" class="btn btn-primary black-btn2 mt-3 mr-sm-2">Order Now</a>
             <a href="javascript:void(Tawk_API.toggle())" class="btn btn-success black-btn2 mt-3 mr-sm-2 bounce-effect"><i class="fa fa-envelope"></i> Get in touch</a>
         </div>
     </div>
@@ -328,9 +346,9 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <div class="section-title mb-4 pb-2">
+                <div class="section-title mb-1 pb-1">
                     <h1 class="mb-4" style="font-size:30px; font-weight:bold;">WE COVER THE FOLLOWING ASSIGNMENTS CATEGORIES</h1>
-                    <p class="text-muted para-desc mx-auto mb-0">Although you can leverage our expertise for any writing task, we have a knack for creating flawless papers for the following document types.</p>
+                    <p class="text-muted para-desc mx-auto mb-0">Were Here For You.</p>
                 </div>
             </div>
             <!--end col-->
@@ -343,12 +361,22 @@
         
                     <div class="row text-center" id="aa">
                         <a href="#">
-                        <div class="category col-lg-3 col-sm-6 col-6 mt-4 pt-2">
+                        <style>
+                            /* .content:hover{
+                                background:#007b5e;
+                                padding:5px;
+                                border-radius:5px;
+                            } */
+                            .item{
+                                /* border:1px solid grey; */
+                            }
+                        </style>
+                        <div id="" class="item category col-lg-3 col-sm-6 col-6 mt-4 pt-2">
                             <div class="key-feature p-5 rounded shadow bg-white">
                                 <div class="icon-1 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Essays</h4>
+                                    <h4 class="title mb-0"><i class="fa fa-check" style="background:deepskyblue;border-radius:12px;font-size:20px"></i> Essays</h4>
                                 </div>
                             </div>
                         </div>
@@ -359,7 +387,7 @@
                                 <div class="icon-2 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Programming assignements</h4>
+                                    <h4 class="title mb-0"><i class="fa fa-check" style="background:deepskyblue;border-radius:12px;font-size:20px"></i>Programming assignements</h4>
                                 </div>
                             </div>
                         </div>
@@ -368,7 +396,7 @@
                                 <div class="icon-3 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Case Study</h4>
+                                    <h4 class="title mb-0"><i class="fa fa-check" style="background:deepskyblue;border-radius:12px;font-size:20px"></i>Case Study</h4>
                                 </div>
                             </div>
                         </div>
@@ -377,7 +405,7 @@
                                 <div class="icon-4 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Dissertation</h4>
+                                    <h4 class="title mb-0"><i class="fa fa-check" style="background:deepskyblue;border-radius:12px;font-size:20px"></i>Dissertation</h4>
                                 </div>
                             </div>
                         </div>
@@ -388,7 +416,7 @@
                                 <div class="icon-5 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Term Paper</h4>
+                                    <h4 class="title mb-0"><i class="fa fa-check" style="background:deepskyblue;border-radius:12px;font-size:20px"></i>Term Paper</h4>
                                 </div>
                             </div>
                         </div>
@@ -398,7 +426,7 @@
                                 <div class="icon-6 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Business Writing</h4>
+                                    <h4 class="title mb-0"><i class="fa fa-check" style="background:deepskyblue;border-radius:12px;font-size:20px"></i>Business Writing</h4>
                                 </div>
                             </div>
                         </div>
@@ -407,7 +435,7 @@
                                 <div class="icon-7 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Book Review</h4>
+                                    <h4 class="title mb-0"><i class="fa fa-check" style="background:deepskyblue;border-radius:12px;font-size:20px"></i>Book Review</h4>
                                 </div>
                             </div>
                         </div>
@@ -416,7 +444,7 @@
                                 <div class="icon-9 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Report</h4>
+                                    <h4 class="title mb-0"><i class="fa fa-check" style="background:deepskyblue;border-radius:12px;font-size:20px"></i>Report</h4>
                                 </div>
                             </div>
                         </div>
@@ -430,7 +458,7 @@
                                 <div class="icon-12 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Article</h4>
+                                    <h4 class="title mb-0"><i class="fa fa-check" style="background:deepskyblue;border-radius:12px;font-size:20px"></i>Article</h4>
                                 </div>
                             </div>
                         </div>
@@ -440,7 +468,7 @@
                                 <div class="icon-13 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Coursework</h4>
+                                    <h4 class="title mb-0"><i class="fa fa-check" style="background:deepskyblue;border-radius:12px;font-size:20px"></i>Coursework</h4>
                                     
                                 </div>
                             </div>
@@ -451,7 +479,7 @@
                                 <div class="icon-15 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Q &amp; A</h4>
+                                    <h4 class="title mb-0"><i class="fa fa-check" style="background:deepskyblue;border-radius:12px;font-size:20px"></i>Q &amp; A</h4>
                                 </div>
                             </div>
                         </div>
@@ -460,7 +488,7 @@
                                 <div class="icon-16 icon text-center rounded-pill">
                                 </div>
                                 <div class="content mt-2">
-                                    <h4 class="title mb-0">Critical Thinking
+                                    <h4 class="title mb-0"><i class="fa fa-check" style="background:deepskyblue;border-radius:12px;font-size:20px"></i>Critical Thinking
                                     </h4>
                                 </div>
                             </div>
@@ -474,13 +502,13 @@
 <!--end section-->
 
 
-<section style="background:#f8f9fa;padding:70px 0px;">
+<section style="background:#f8f9fa; border-top:1px solid grey">
     <div class="container" id="faqs">
         <div class="section-title text-center">
-            <h1 class="main-title mb-4">FAQs</h1>
-            <p class="text-muted para-desc mb-0 mx-auto">.</p>
+            <h1 class="h1" style="font-weight:bold">Frequently Asked Questions</h1>
+            <!-- <p class="text-muted para-desc mb-0 mx-auto">.</p> -->
         </div>
-        <div class="row mt-3 align-items-center">
+        <div class="row  align-items-center">
 
             <!--end col-->
             <div class="col-lg-6 col-md-6 align-items-center">
@@ -489,12 +517,12 @@
                         <div class="card border rounded shadow mb-2">
                             <a data-toggle="collapse" data-target="#collapseOne" class="faq position-relative" aria-expanded="true" aria-controls="collapseOne">
                                 <div class="card-header bg-light p-3" id="headingOne">
-                                    <h4 class="h3 mb-0 faq-question">How fast can you deliver</h4>
+                                    <h4 class="title mb-0 faq-question">Which subjects do you cover?</h4>
                                 </div>
                             </a>
                             <div id="collapseOne" class="collapse toggle" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p class="text-muted mb-0 faq-ans">Your order will be delivered to you via e-mail. If you need any corrections in your final order, you can simply respond to that email. </p>
+                                    <p class="text-muted mb-0 faq-ans">We offer a wide range of cources listed in our website, services section. </p>
                                 </div>
                             </div>
                         </div>
@@ -502,12 +530,12 @@
                         <div class="card border rounded shadow mb-2">
                             <a data-toggle="collapse" data-target="#collapseTwo" class="faq position-relative collapsed" aria-expanded="false" aria-controls="collapseTwo">
                                 <div class="card-header bg-light p-3" id="headingTwo">
-                                    <h4 class="title mb-0 faq-question">Can I talk to my writer?</h4>
+                                    <h4 class="title mb-0 faq-question">How fast do you deliver?</h4>
                                 </div>
                             </a>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p class="text-muted mb-0 faq-ans">Sure! Ask anything in the chatbox or shoot an email. You can hit us up with any query that is lingering in your minds and the writers will answer you via email.</p>
+                                    <p class="text-muted mb-0 faq-ans">We deliver your assigment as soon as possible within the requested duration.</p>
                                 </div>
                             </div>
                         </div>
@@ -515,12 +543,12 @@
                         <div class="card border rounded shadow mb-2">
                             <a data-toggle="collapse" data-target="#collapsethree" class="faq position-relative collapsed" aria-expanded="false" aria-controls="collapsethree">
                                 <div class="card-header bg-light p-3" id="headingthree">
-                                    <h4 class="title mb-0 faq-question">Where should I send my order details?</h4>
+                                    <h4 class="title mb-0 faq-question">Is it possible to meet the very urgent deadlines?</h4>
                                 </div>
                             </a>
                             <div id="collapsethree" class="collapse" aria-labelledby="headingthree" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p class="text-muted mb-0 faq-ans">Wherever you like; you can either send the details directly on the live chat box or send us an email. We are responsive everywhere and will definitely reply.</p>
+                                    <p class="text-muted mb-0 faq-ans">Yes of course. Providing urgent assignment help is one of our prominent features. But, to receive the assignment within a short deadline, you need to pay extra amount.</p>
                                 </div>
                             </div>
                         </div>
@@ -528,7 +556,7 @@
                         <div class="card rounded shadow mb-0">
                             <a data-toggle="collapse" data-target="#collapsefive" class="faq position-relative collapsed" aria-expanded="false" aria-controls="collapsefive">
                                 <div class="card-header bg-light p-3" id="headingfive">
-                                    <h4 class="title mb-0 faq-question">How will I pay?</h4>
+                                    <h4 class="title mb-0 faq-question">How can i pay for my assignment?</h4>
                                 </div>
                             </a>
                             <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
@@ -537,6 +565,52 @@
                                 </div>
                             </div>
                         </div>
+                        <!--end card-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 align-items-center">
+                <div class="faq-content mr-lg-5">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card border rounded shadow mb-2">
+                            <a data-toggle="collapse" data-target="#collapseOne1" class="faq position-relative" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="card-header bg-light p-3" id="headingOne">
+                                    <h4 class="title mb-0 faq-question">Can you guarantee plagiarism-free academic work?</h4>
+                                </div>
+                            </a>
+                            <div id="collapseOne1" class="collapse toggle" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="text-muted mb-0 faq-ans">Yes, we offer plagiarism-free academic work to our valued customers. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end card-->
+                        <div class="card border rounded shadow mb-2">
+                            <a data-toggle="collapse" data-target="#collapseTwo2" class="faq position-relative collapsed" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="card-header bg-light p-3" id="headingTwo">
+                                    <h4 class="title mb-0 faq-question">Who judges the quality standard of the work I ordered?</h4>
+                                </div>
+                            </a>
+                            <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="text-muted mb-0 faq-ans">We have a quality control team that looks after the quality of the work. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end card-->
+                        <div class="card border rounded shadow mb-2">
+                            <a data-toggle="collapse" data-target="#collapsethree2" class="faq position-relative collapsed" aria-expanded="false" aria-controls="collapsethree">
+                                <div class="card-header bg-light p-3" id="headingthree">
+                                    <h4 class="title mb-0 faq-question">Where should I send my order details?</h4>
+                                </div>
+                            </a>
+                            <div id="collapsethree2" class="collapse" aria-labelledby="headingthree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="text-muted mb-0 faq-ans">Wherever you like; you can either send the details directly on the live chat box or send us an email. We are responsive everywhere and will definitely reply.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end card-->
                         <!--end card-->
                     </div>
                 </div>
@@ -550,6 +624,73 @@
 </section>
 <!-- end of faqs -->
 <!-- testimonials -->
+<div class="row justify-content-center" id="testimonials">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <h1 class="main-title" style="color:#007b5e;font-size:30px; font-weight:bold;">TESTIMONIALS</h1>
+                    <!-- <p class="text-muted para-desc mx-auto mb-0">Although you can leverage our expertise for any writing task, we have a knack for creating flawless papers for the following document types.</p> -->
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+    <style>
+    @media(max-width:450px){
+            .item .h1{
+                font-size:22px;
+            }
+            .item{
+                height:300px;
+            }
+    }
+    </style>
+      <!-- Wrapper for slides -->
+      <div class=" c1 carousel-inner" style="margin-top: -1.5%; color:black;">
+        <div class="item active col-md-12" style="max-height: 250px;">
+          <img src="images/carousel.jpg" width="100%" height="150px">
+          <div class="carousel-caption text-primary">
+              <p><h4 class="h1 text-center" style="color:#007b5e">David Ngugi | Computer Science student</h4><h6>University of Nairobi</h6></p>
+              <h4 class="text-center" style="color:skyblue"><u>Best assignment helper i have seen so far.</u></h4>
+            <br>
+          </div>
+        </div>
+    
+        <div class="item col-md-12" style="max-height: 250px;">
+        <img src="images/carousel.jpg" width="100%" height="100px">
+          <div class="carousel-caption">
+          <p><h4 class="h1 text-center" style="color:#007b5e">Samuel Kinuthia | Software engineering student</h4><h6>Boston University</h6></p>
+              <h4 class="text text-center" style="color:skyblue"><u>I have used this platform for 2 years six months, They are the best.</u></h4>
+            <br>
+          </div>
+        </div>
+    
+        <div class="item col-md-12" style="max-height: 250px;">
+        <img src="images/carousel.jpg" width="100%" height="100px">
+          <div class="carousel-caption" >
+          <p><h4 class="h1 text-center" style="color:#007b5e">Mercy Mwikali | Clerk</h4><h6>Missisipi County Office</h6></p>
+              <h4 class="text text-center" style="color:skyblue"><u>This site is provides great services i can say, thanks to them.</u></h4>
+            <br>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+<!-- end of testimonials -->
     
 <!-- end of testimonials -->
 <?php include 'includes/footer.php';?>
@@ -588,22 +729,19 @@ $(window).scroll(function() {
 <!-- Main Js -->
 <script src="includes/ultraexpeditious.js"></script>
 <!--Start of Tawk.to Script-->
-<script>
-    var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-    (function() {
-        var s1 = document.createElement("script"),
-            s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/5f3fa5721e7ade5df442c6c9/default';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/601ed14da9a34e36b9747d72/1ets6377c';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
 </script>
-
-<!--  -->
+<!--End of Tawk.to Script--><!--  -->
 
 
 <!--  -->
@@ -625,3 +763,47 @@ $(window).scroll(function() {
 
 </script>
 <div id="VLOaEf6-1612162005471" class="" style="display: block !important;"><iframe id="bCoM5Nj-1612162005474" src="./Achieve Success in College with Reliable Services Online _ AssignmentMavens_files/saved_resource(1).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: auto !important; left: auto !important; position: static !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 350px !important; height: 520px !important; z-index: 999999 !important; cursor: auto !important; float: none !important; border-radius: unset !important; pointer-events: auto !important; display: none !important;"></iframe><iframe id="Tw6kMDC-1612162005475" src="./Achieve Success in College with Reliable Services Online _ AssignmentMavens_files/saved_resource(2).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; transition-property: none !important; z-index: 1000001 !important; cursor: auto !important; float: none !important; pointer-events: auto !important; box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 10px 0px !important; height: 60px !important; min-height: 60px !important; max-height: 60px !important; width: 60px !important; min-width: 60px !important; max-width: 60px !important; border-radius: 50% !important; transform: rotate(0deg) translateZ(0px) !important; transform-origin: 0px center !important; margin: 0px !important; top: auto !important; bottom: 20px !important; right: 20px !important; left: auto !important; display: block !important;"></iframe><iframe id="UwJPfVZ-1612162005476" src="./Achieve Success in College with Reliable Services Online _ AssignmentMavens_files/saved_resource(3).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; z-index: 1000003 !important; cursor: auto !important; float: none !important; border-radius: unset !important; pointer-events: auto !important; top: auto !important; bottom: 60px !important; right: 15px !important; left: auto !important; width: 21px !important; max-width: 21px !important; min-width: 21px !important; height: 21px !important; max-height: 21px !important; min-height: 21px !important; display: block !important;"></iframe><div class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 100% !important; display: none !important; z-index: 1000001 !important; cursor: move !important; float: left !important; border-radius: unset !important; pointer-events: auto !important;"></div><div id="jQs6OPz-1612162005471" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: w-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div><div id="okg1x6g-1612162005472" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: n-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div><div id="S0yVJuU-1612162005472" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: nw-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div><iframe id="g5LsLH3-1612162005547" src="./Achieve Success in College with Reliable Services Online _ AssignmentMavens_files/saved_resource(4).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 378px !important; height: 592px !important; display: none !important; z-index: 999999 !important; cursor: auto !important; float: none !important; border-radius: unset !important; pointer-events: auto !important; bottom: 100px !important; top: auto !important; right: 20px !important; left: auto !important;"></iframe></div></body></html>
+<?php
+// include("includes/footer.php");
+function sendmail($toaddress,$subject,$message)
+{
+	require 'phplist3-master/public_html/lists/admin/PHPMailer/PHPMailerAutoload.php';
+	
+	$mail = new PHPMailer;
+	
+	$mail->SMTPDebug = 0;                               // Enable verbose debug output
+	
+	$mail->isSMTP();                                      // Set mailer to use SMTP
+	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+	$mail->SMTPAuth = true;                               // Enable SMTP authentication
+	$mail->Username = 'ngugidavid1001@gmail.com';                 // SMTP username
+	$mail->Password = 'Shadow-walker1';                           // SMTP password
+	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+	$mail->Port = 587;                                    // TCP port to connect to
+	
+	$mail->From = 'ngugidavid1001@gmail.com';
+	$mail->FromName = 'Web Mall';
+	$mail->addAddress($toaddress, 'assignment helper');     // Add a recipient
+	$mail->addAddress($toaddress);               // Name is optional
+	$mail->addReplyTo('ngugidavid1001@gmail.com', 'Information');
+	$mail->addCC('ngugidavid46@gmail.com');
+	$mail->addBCC('ngugidavid1001@gmail.com');
+	
+	// $mail->addAttachment('hmss/images/deantal3.png');         // Add attachments
+	// $mail->addAttachment('hmss/images/deantal3.png', 'new.png');    // Optional name
+	$mail->isHTML(true);                                  // Set email format to HTML
+	
+	$mail->Subject = $subject;
+	$mail->Body    = $message;
+	$mail->AltBody = $subject;
+	
+	if(!$mail->send()) {
+		echo 'Message could not be sent.';
+		echo 'Mailer Error: ' . $mail->ErrorInfo;
+	} else {
+		echo '<center><strong><font color=green>Mail sent.</font></strong></center>';
+	}
+}
+?>
+
+<!-- https://ads.google.com/aw/signup/payment?ocid=645202755&subid=KE-en-xs-ip-gmb_aw_qual-sf-dw-acce&name=assignment+helper&hl=en&authuser=6&uscid=645202755&__c=6927413995&euid=490232778&__u=5440918522 -->
