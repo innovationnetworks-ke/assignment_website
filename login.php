@@ -19,6 +19,7 @@
                 </span>
               </div>
             </div>
+            
             <div class="field">
               <label for="" class="label">Password</label>
               <div class="control has-icons-left">
